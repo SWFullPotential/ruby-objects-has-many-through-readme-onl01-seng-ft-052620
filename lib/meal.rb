@@ -1,7 +1,7 @@
 require 'pry'
 
 class Meal
-  attr_accessor :waiter, :customer, :total, :authenticate_or_request_with_http_digest, :tip
+  attr_accessor :waiter, :customer, :total, :tip
   
   @@all = []
   
