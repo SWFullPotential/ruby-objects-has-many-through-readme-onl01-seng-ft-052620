@@ -17,6 +17,6 @@ class Meal
     @@all  
   end
   
-binding.pry
+#binding.pry
   
 end
