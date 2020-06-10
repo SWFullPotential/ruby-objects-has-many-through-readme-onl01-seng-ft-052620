@@ -24,11 +24,13 @@ class Customer
       meal.customer == self  
     end
   end
-        # We're iterating through every instance of Meal and returning only the ones where the meal's customer matches the current customer instance.
-  def waiters
-    meals.map do |meal|
-      meal.waiter
+  
+  def best_tipper
+    best_tipped_meal = meals.max do |meal_a, meal_b|
+      meal_a.tip <=> meal_b.tip
     end
+
+    best_tipped_meal.customer
   end
 
 end
